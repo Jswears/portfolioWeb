@@ -3,7 +3,6 @@ import IntroSection from "./components/IntroSection";
 import "./styles/_index.scss";
 import AboutSection from "./components/AboutSection";
 import ProjectSection from "./components/ProjectsSection";
-import ContactSection from "./components/ContactSection";
 
 function App() {
   return (

@@ -210,12 +210,14 @@ section {
 @media (max-width: 500px) {
   #page-container {
     #intro-section {
+      /* Adjust intro-section styles for small screens */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       gap: 40px;
+
       .container-left {
         margin-top: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         h1 {
           margin-top: $base-margin * 2;
           color: #333333;
@@ -240,7 +242,14 @@ section {
         padding-bottom: 80px;
       }
     }
+    /* Project Section */
     #project-section {
+      /* Adjust project-section styles for small screens */
+      justify-content: space-evenly;
+      align-items: center;
+      .projects {
+        padding-bottom: 150px;
+      }
       .info-right {
         .logo-sm {
           height: 20px;
@@ -310,6 +319,30 @@ section {
       /* Adjust project-section styles for small screens */
       justify-content: space-evenly;
       align-items: center;
+      .projects {
+        padding-bottom: 100px;
+      }
+      .projects-card {
+        width: 500px;
+        height: 200px;
+        .app-img {
+          height: 100%;
+        }
+        .info-right {
+          h3 {
+            font-size: $font-size-lg;
+          }
+          p {
+            font-size: 15px;
+          }
+          .logo-sm {
+            height: 32px;
+          }
+          .technologies {
+            margin-top: 30px;
+          }
+        }
+      }
       .info-right {
         .logo-sm {
           height: 20px;
@@ -384,6 +417,9 @@ section {
     #project-section {
       justify-content: space-evenly;
       align-items: center;
+      .projects {
+        padding-bottom: 100px;
+      }
       .projects-card {
         width: 600px;
         height: 200px;
@@ -484,7 +520,7 @@ section {
       .projects {
         flex-direction: row;
         flex-wrap: wrap;
-        padding-bottom: 60px;
+        padding-bottom: 100px;
         .projects-card {
           height: 500px;
           width: 250px;
@@ -779,7 +815,7 @@ section {
       .projects {
         flex-direction: row;
         flex-wrap: wrap;
-        padding-bottom: 60px;
+        padding-bottom: 100px;
         .projects-card {
           height: 650px;
           width: 400px;
