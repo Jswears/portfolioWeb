@@ -247,8 +247,15 @@ section {
       /* Adjust project-section styles for small screens */
       justify-content: space-evenly;
       align-items: center;
+      .projects-card {
+        height: 200px;
+        width: 450px;
+        img {
+          height: 100%;
+        }
+      }
       .projects {
-        padding-bottom: 150px;
+        padding-bottom: 100px;
       }
       .info-right {
         .logo-sm {
