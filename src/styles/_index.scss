@@ -249,9 +249,17 @@ section {
       align-items: center;
       .projects-card {
         height: 200px;
-        width: 450px;
+        width: 400px;
         img {
           height: 100%;
+        }
+        .project-info {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          .technologies {
+            margin-top: 30px;
+          }
         }
       }
       .projects {
