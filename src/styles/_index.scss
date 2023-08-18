@@ -121,13 +121,16 @@ section {
         font-weight: 600;
       }
       .email {
-        color: #3498db;
+        color: black;
         font-size: $font-size-sm + 0.7;
         font-weight: 400;
         cursor: pointer;
-        &:hover {
-          color: $error;
-        }
+      }
+      .orange:hover {
+        color: orange;
+      }
+      .green {
+        color: green;
       }
     }
   }

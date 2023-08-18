@@ -46,7 +46,7 @@ const IntroSection = ({ language }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setCopySuccessMessage("");
-    }, 5000);
+    }, 3000);
     return () => clearTimeout(timer);
   }, [copySuccessMessage]);
 
@@ -82,7 +82,7 @@ const IntroSection = ({ language }) => {
           {copySuccessMessage} {instructions}
         </p>
         <p
-          className="email"
+          className={copySuccessMessage ? "email green" : "email orange"}
           onClick={copyEmail}
           onMouseOver={showInstruction}
           onMouseOut={hideInstruction}
