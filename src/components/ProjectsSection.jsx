@@ -37,7 +37,9 @@ const ProjectSection = () => {
       <div className="projects">
         {projectsImg.map((project) => (
           <div className="projects-card" key={project.name}>
-            <img src={project.ref} alt={project.name} className="app-img" />
+            <a href={project.deployLink}>
+              <img src={project.ref} alt={project.name} className="app-img" />
+            </a>
             <div className="project-info">
               <div className="info-right">
                 <div>
