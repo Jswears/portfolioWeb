@@ -23,25 +23,29 @@ const technologiesLogos = [
   { name: "React", src: ReactLogo },
 ];
 
-const AboutSection = () => {
+const AboutSection = ({ language }) => {
   const [width, setWidth] = useState(0);
   const carousel = useRef();
 
   useEffect(() => {
     setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
   }, []);
+
+  const content = {
+    en: {
+      heading: "About me",
+      content: `Cultivating a diverse international background, I am enthusiastic about launching my career in front-end development. I have gained hands-on experience by participating in a range of projects, with a primary focus on front-end work, complemented by my involvement in back-end tasks. This has laid a robust foundation for me, and I thrive on creative approaches to problem-solving. My commitment to continual learning and personal growth defines my professional ethos.`,
+    },
+    de: {
+      heading: "Über mich",
+      content: `Ich habe eine vielseitige internationale Background und bin excited, meine Laufbahn in der Frontend-Entwicklung zu beginnen. Durch Teilnahme an diversen Projekten habe ich praktische Erfahrung gesammelt, mit Schwerpunkt auf Frontend-Arbeit, ergänzt durch Backend-Aufgaben. Das hat eine starke Basis für mich geschaffen, und ich liebe kreative Ansätze zur Problemlösung. Meine Hingabe zum kontinuierlichen Lernen und persönlichem Wachstum prägt mein berufliches Ethos.`,
+    },
+  };
+
   return (
     <section id="about-section">
-      <h2>About me</h2>
-      <p>
-        Cultivating a diverse international background, I am enthusiastic about
-        launching my career in front-end development. I have gained hands-on
-        experience by participating in a range of projects, with a primary focus
-        on front-end work, complemented by my involvement in back-end tasks.
-        This has laid a robust foundation for me, and I thrive on creative
-        approaches to problem-solving. My commitment to continual learning and
-        personal growth defines my professional ethos.
-      </p>
+      <h2>{content[language].heading}</h2>
+      <p>{content[language].content}</p>
 
       <motion.div className="carousel" ref={carousel}>
         <motion.div

@@ -17,20 +17,33 @@ const socialLinks = [
   },
 ];
 
-const IntroSection = () => {
+const IntroSection = ({ language }) => {
+  const content = {
+    en: {
+      name: "Hey! I'm Joaquin.",
+      role: "Web Developer",
+      bio: "Developer from Chile based in Hamburg. I like to write some code and solve problems.",
+      langBtn: "DE",
+    },
+    de: {
+      name: "Moin! Ich bin Joaquin.",
+      role: "Webentwickler",
+      bio: "Entwickler aus Chile mit Sitz in Hamburg. Ich mag es, etwas Code zu schreiben und Probleme zu lösen.",
+      langBtn: "EN",
+    },
+  };
+
   return (
     <section id="intro-section">
       <div className="header container-left">
-        <h1>Hey! I&apos;m Joaquin.</h1>
-        <h2 id="big-sc">Web Developer</h2>
-        <p>
-          Developer from Chile based in Hamburg. I like to write some code and
-          solve problems.
-        </p>
+        <h1>{content[language].name}</h1>
+        <h2 id="big-sc">{content[language].role}</h2>
+        <p>{content[language].bio}</p>
       </div>
       <div className="container-right">
         <img src={MyImage} alt="My image" className="profile-image" />
-        <h2>Web Developer</h2>
+        <h2>{content[language].role}</h2>
+        <h3 className="cta">Let&apos;s connect!</h3>
         <div className="social">
           {socialLinks.map((link) => (
             <a key={link.name} href={link.url}>

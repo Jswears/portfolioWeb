@@ -3,37 +3,52 @@ import TrackifyImg from "../assets/image 2 (1).png";
 import VetAppImg from "../assets/image 3 (1).png";
 import Github from "../assets/mdi_github.png";
 
-const projectsImg = [
-  {
-    name: "VetApp",
-    ref: VetAppImg,
-    description: "App to help connecting pet owners with veterinarians.",
-    technologies: ["CSS", "React", "Node.js", "Express", "MongoDB"],
-    deployLink: "https://vetappwecare.netlify.app/",
-    repository: "https://github.com/Jswears/veterinary-frontend",
-  },
-  {
-    name: "Trackify",
-    ref: TrackifyImg,
-    description: "App to help you track your habits, dailies and to-do's",
-    technologies: ["EJS", "CSS", "JavaScript", "Node.js", "Express", "MongoDB"],
-    deployLink: "https://habit-tracker.adaptable.app/",
-    repository: "https://github.com/Jswears/habit-tracker",
-  },
-  {
-    name: "Unknown Chronicles",
-    ref: GameImg,
-    description: "Fun click on to defeat your enemies game! Enjoy",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    deployLink: "https://jswears.github.io/unknownChronicles/",
-    repository: "https://github.com/Jswears/unknownChronicles",
-  },
-];
-
-const ProjectSection = () => {
+const ProjectSection = ({ language }) => {
+  const projectsImg = [
+    {
+      name: "VetApp",
+      ref: VetAppImg,
+      description:
+        language === "en"
+          ? "App to help connecting pet owners with veterinarians."
+          : "App, die Tierhalter mit Tierärzten zusammenbringt.",
+      technologies: ["CSS", "React", "Node.js", "Express", "MongoDB"],
+      deployLink: "https://vetappwecare.netlify.app/",
+      repository: "https://github.com/Jswears/veterinary-frontend",
+    },
+    {
+      name: "Trackify",
+      ref: TrackifyImg,
+      description:
+        language === "en"
+          ? "App to help you track your habits, dailies and to-do's "
+          : "App zum Verfolgen deiner Habits",
+      technologies: [
+        "EJS",
+        "CSS",
+        "JavaScript",
+        "Node.js",
+        "Express",
+        "MongoDB",
+      ],
+      deployLink: "https://habit-tracker.adaptable.app/",
+      repository: "https://github.com/Jswears/habit-tracker",
+    },
+    {
+      name: "Unknown Chronicles",
+      ref: GameImg,
+      description:
+        language === "en"
+          ? "Fun click on to defeat your enemies game! Enjoy"
+          : "Ein lustiges Click-on Spiel, bei dem du deine Feinde besiegen musst! Viel Spaß",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      deployLink: "https://jswears.github.io/unknownChronicles/",
+      repository: "https://github.com/Jswears/unknownChronicles",
+    },
+  ];
   return (
     <section id="project-section">
-      <h2>Projects</h2>
+      <h2>{language === "en" ? "Projects" : "Projekte"}</h2>
       <div className="projects">
         {projectsImg.map((project) => (
           <div className="projects-card" key={project.name}>

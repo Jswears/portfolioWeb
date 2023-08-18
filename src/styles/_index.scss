@@ -37,6 +37,22 @@ section {
   top: 0;
   left: 0;
   right: 0;
+  button {
+    padding: 10px 20px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    border-radius: $base-border-radius;
+    transition: background-color 0.3s ease;
+    &:hover {
+      background-color: #2980b9;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
   h2 {
     font-size: $font-size-lg;
     display: none;
@@ -85,6 +101,13 @@ section {
           transform: scale(1.2);
         }
       }
+    }
+    .cta {
+      font-size: 30px;
+      color: #3498db;
+      text-align: center;
+      margin-top: 20px;
+      font-weight: bold;
     }
   }
   //   About Section

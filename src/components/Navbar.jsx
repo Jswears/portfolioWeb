@@ -1,10 +1,15 @@
-const navLinks = [
-  { name: "About", ref: "#about-section" },
-  { name: "Projects", ref: "#project-section" },
-  { name: "Contact", ref: "#contact-section" },
-];
-
-const Navbar = () => {
+const Navbar = ({ language, toggleLanguage }) => {
+  const navLinks = [
+    { name: language === "en" ? "About" : "Über", ref: "#about-section" },
+    {
+      name: language === "en" ? "Projects" : "Projekte",
+      ref: "#project-section",
+    },
+    {
+      name: language === "en" ? "Contact" : "Kontakt",
+      ref: "#contact-section",
+    },
+  ];
   return (
     <nav className="navbar">
       <span>
@@ -13,6 +18,9 @@ const Navbar = () => {
       <h2>
         <a href="#intro-section">Joaquin Swears |</a>
       </h2>
+      <button onClick={() => toggleLanguage(language === "en" ? "de" : "en")}>
+        {language === "en" ? "DE" : "EN"}
+      </button>
       <ul>
         {navLinks.map((link) => (
           <li key={link.name}>
