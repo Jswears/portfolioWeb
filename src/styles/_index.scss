@@ -38,8 +38,8 @@ section {
   left: 0;
   right: 0;
   button {
-    padding: 10px 20px;
-    font-size: 12px;
+    padding: 5px 10px;
+    font-size: 15px;
     border: none;
     cursor: pointer;
     background-color: #3498db;
@@ -108,6 +108,27 @@ section {
       text-align: center;
       margin-top: 20px;
       font-weight: bold;
+    }
+    .container-right {
+      p {
+        text-align: center;
+      }
+      .instructions {
+        font-weight: 600;
+      }
+      .success-msg {
+        color: green;
+        font-weight: 600;
+      }
+      .email {
+        color: #3498db;
+        font-size: $font-size-sm + 0.7;
+        font-weight: 400;
+        cursor: pointer;
+        &:hover {
+          color: $error;
+        }
+      }
     }
   }
   //   About Section
