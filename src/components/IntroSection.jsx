@@ -76,8 +76,8 @@ const IntroSection = ({ language }) => {
       </div>
       <div className="container-right">
         <img src={MyImage} alt="My image" className="profile-image" />
-        <h2>{content[language].role}</h2>
         <div className="call-to-action">
+          <h2>{content[language].role}</h2>
           <h3 className="cta">Let&apos;s connect!</h3>
           <p className={copySuccessMessage ? "success-msg" : "instructions"}>
             {copySuccessMessage} {instructions}

@@ -16,9 +16,6 @@
 // Config for scroll-snap
 section {
   height: 100vh;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
-  scroll-behavior: smooth;
 }
 
 // Mobile
@@ -92,12 +89,14 @@ section {
     .call-to-action {
       margin-top: $base-margin;
       display: flex;
+      gap: 5px;
       flex-direction: column;
     }
     .social {
       text-align: center;
       display: flex;
       justify-content: center;
+      margin-top: 5px;
 
       img {
         transition: transform 0.2s;
@@ -439,6 +438,11 @@ section {
 /* Medium screens */
 
 @media (min-width: 767px) and (max-width: 810px) {
+  section {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    scroll-behavior: smooth;
+  }
   .navbar {
     /* Adjust navbar styles for medium screens */
     h2 {
@@ -529,6 +533,11 @@ section {
   }
 }
 @media (min-width: 811px) and (max-width: 1024px) {
+  section {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    scroll-behavior: smooth;
+  }
   .navbar {
     /* Adjust navbar styles for medium screens */
     h2 {
@@ -661,6 +670,11 @@ section {
 /* Large screens */
 
 @media (min-width: 1024px) {
+  section {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    scroll-behavior: smooth;
+  }
   .navbar {
     /* Adjust navbar styles for large screens */
     h2 {
@@ -815,6 +829,11 @@ section {
   }
 }
 @media (min-width: 1295px) {
+  section {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    scroll-behavior: smooth;
+  }
   .navbar {
     /* Adjust navbar styles for large screens */
     h2 {

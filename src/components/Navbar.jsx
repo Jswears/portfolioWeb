@@ -4,7 +4,7 @@ const Navbar = ({ language, toggleLanguage }) => {
       name: language === "en" ? "Home" : "Home",
       ref: "#intro-section",
     },
-    { name: language === "en" ? "About" : "Über", ref: "#about-section" },
+    { name: language === "en" ? "About" : "Über ", ref: "#about-section" },
     {
       name: language === "en" ? "Projects" : "Projekte",
       ref: "#project-section",
