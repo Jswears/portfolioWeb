@@ -270,7 +270,10 @@ section {
       flex-direction: column;
       align-items: center;
       gap: 40px;
-
+      .cta {
+        // TODO: MAYBE FIX
+        margin-top: 0;
+      }
       .container-left {
         margin-top: 30px;
         h1 {
@@ -716,6 +719,7 @@ section {
         }
         .call-to-action {
           margin-top: $base-margin;
+
           .cta {
             margin-top: 0;
           }
