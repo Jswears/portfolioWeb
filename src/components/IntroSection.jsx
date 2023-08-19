@@ -77,24 +77,26 @@ const IntroSection = ({ language }) => {
       <div className="container-right">
         <img src={MyImage} alt="My image" className="profile-image" />
         <h2>{content[language].role}</h2>
-        <h3 className="cta">Let&apos;s connect!</h3>
-        <p className={copySuccessMessage ? "success-msg" : "instructions"}>
-          {copySuccessMessage} {instructions}
-        </p>
-        <p
-          className={copySuccessMessage ? "email green" : "email orange"}
-          onClick={copyEmail}
-          onMouseOver={showInstruction}
-          onMouseOut={hideInstruction}
-        >
-          ji.swearssalinas@gmail.com
-        </p>
-        <div className="social">
-          {socialLinks.map((link) => (
-            <a key={link.name} href={link.url}>
-              <img src={link.image} alt={link.name} title={link.title} />
-            </a>
-          ))}
+        <div className="call-to-action">
+          <h3 className="cta">Let&apos;s connect!</h3>
+          <p className={copySuccessMessage ? "success-msg" : "instructions"}>
+            {copySuccessMessage} {instructions}
+          </p>
+          <p
+            className={copySuccessMessage ? "email green" : "email orange"}
+            onClick={copyEmail}
+            onMouseOver={showInstruction}
+            onMouseOut={hideInstruction}
+          >
+            ji.swearssalinas@gmail.com
+          </p>
+          <div className="social">
+            {socialLinks.map((link) => (
+              <a key={link.name} href={link.url}>
+                <img src={link.image} alt={link.name} title={link.title} />
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </section>
