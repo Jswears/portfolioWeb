@@ -96,6 +96,11 @@ const IntroSection = ({ language }) => {
                 <img src={link.image} alt={link.name} title={link.title} />
               </a>
             ))}
+            <button className="resume-btn">
+              <a href="https://drive.google.com/file/d/1JY-yo4PNddkKhqdOQ5XAuZSmjORCFAlu/view?usp=sharing">
+                {language === "en" ? "Resume" : "Lebenslauf"}
+              </a>
+            </button>
           </div>
         </div>
       </div>

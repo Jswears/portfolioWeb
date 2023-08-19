@@ -76,6 +76,21 @@ section {
   // Intro Section
   #intro-section {
     margin-top: 64px;
+    .resume-btn {
+      background-color: mix(black, #f9f9f9, 7%); /* Green background color */
+      color: black;
+      padding: 10px 10px;
+      text-decoration: none;
+      border-radius: 30px; 
+      font-size: 18px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      font-weight: 600;
+      &:hover {
+        background-color: orange;
+      }
+    }
     .header {
       img {
         margin-top: $base-margin * 4;
