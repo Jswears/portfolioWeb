@@ -5,24 +5,26 @@ import Resume from "../assets/resume-svgrepo-com.svg";
 
 import { useEffect, useState } from "react";
 
-const socialLinks = [
-  {
-    name: "Linkedin",
-    image: Linkedin,
-    url: "https://www.linkedin.com/in/joaquin-ignacio-swears-salinas-9a4947284/",
-  },
-  { name: "Github", image: Github, url: "https://github.com/Jswears" },
-  {
-    name: "Resume",
-    image: Resume,
-    url: "https://drive.google.com/file/d/1JY-yo4PNddkKhqdOQ5XAuZSmjORCFAlu/view?usp=drive_link",
-  },
-];
-
 const IntroSection = ({ language }) => {
   const [copySuccessMessage, setCopySuccessMessage] = useState("");
   const [instructions, setInstructions] = useState("");
 
+  const socialLinks = [
+    {
+      name: "Linkedin",
+      image: Linkedin,
+      url: "https://www.linkedin.com/in/joaquin-ignacio-swears-salinas-9a4947284/",
+    },
+    { name: "Github", image: Github, url: "https://github.com/Jswears" },
+    {
+      name: "Resume",
+      image: Resume,
+      url:
+        language === "en"
+          ? "https://drive.google.com/file/d/17TypN8sxRLRhEuIx_yXEF2TLXhpYjkk2/view?usp=drive_link"
+          : "https://drive.google.com/file/d/1OMBBWiWZHAFWTQnCVTAoLbblbWN56AiL/view?usp=drive_link",
+    },
+  ];
   const content = {
     en: {
       name: "Hey! I'm Joaquin.",

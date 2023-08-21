@@ -11,7 +11,7 @@ const ProjectSection = ({ language }) => {
       description:
         language === "en"
           ? "App to help connecting pet owners with veterinarians."
-          : "App, die Tierhalter mit Tierärzten zusammenbringt.",
+          : "App, die Tierhalter mit Tierärzten zusammenbringt",
       technologies: ["CSS", "React", "Node.js", "Express", "MongoDB"],
       deployLink: "https://vetappwecare.netlify.app/",
       repository: "https://github.com/Jswears/veterinary-frontend",
