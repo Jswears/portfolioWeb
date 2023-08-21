@@ -15,7 +15,7 @@ const socialLinks = [
   {
     name: "Resume",
     image: Resume,
-    url: "https://drive.google.com/file/d/1JY-yo4PNddkKhqdOQ5XAuZSmjORCFAlu/view?usp=sharing",
+    url: "https://drive.google.com/file/d/1JY-yo4PNddkKhqdOQ5XAuZSmjORCFAlu/view?usp=drive_link",
   },
 ];
 
@@ -93,11 +93,7 @@ const IntroSection = ({ language }) => {
           <div className="social">
             {socialLinks.map((link) => (
               <a key={link.name} href={link.url}>
-                <img
-                  src={link.image}
-                  alt={link.name}
-                  title={link.name}
-                />
+                <img src={link.image} alt={link.name} title={link.name} />
               </a>
             ))}
           </div>
