@@ -1,7 +1,7 @@
 import GameImg from "../assets/image 1 (1).png";
 import TrackifyImg from "../assets/image 2 (1).png";
 import VetAppImg from "../assets/image 3 (1).png";
-import Github from "../assets/mdi_github.png";
+import Github from "../assets/github-mark.svg";
 
 const ProjectSection = ({ language }) => {
   const projectsImg = [
