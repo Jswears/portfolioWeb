@@ -97,7 +97,6 @@ const IntroSection = ({ language }) => {
                   src={link.image}
                   alt={link.name}
                   title={link.name}
-                  style={{ height: "64px" }}
                 />
               </a>
             ))}

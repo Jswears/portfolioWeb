@@ -58,12 +58,14 @@ const ProjectSection = ({ language }) => {
             <div className="project-info">
               <div className="info-right">
                 <div>
-                  <h3>
-                    <a href={project.deployLink}>{project.name} </a>
+                  <div className="project-title">
+                    <h3>
+                      <a href={project.deployLink}>{project.name} </a>
+                    </h3>
                     <a href={project.repository}>
                       <img src={Github} alt="Github" className="logo-sm" />
                     </a>
-                  </h3>
+                  </div>
                   <p>{project.description}</p>
                 </div>
               </div>
