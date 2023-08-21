@@ -77,17 +77,19 @@ section {
   #intro-section {
     margin-top: 64px;
     .resume-btn {
-      background-color: mix(black, #f9f9f9, 7%); /* Green background color */
-      color: black;
+      background-color: white; /* Green background color */
+      color: white;
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
       padding: 10px 10px;
       text-decoration: none;
-      border-radius: 30px; 
-      font-size: 18px;
-      border: none;
+      border-radius: 30px;
+      font-size: 16px;
+      border: 1.5px solid black;
       cursor: pointer;
       transition: background-color 0.3s;
       font-weight: 600;
-      &:hover {
+      margin-left: 5px;
+      img:hover {
         background-color: orange;
       }
     }
@@ -115,6 +117,7 @@ section {
 
       img {
         transition: transform 0.2s;
+        padding: 10px;
         &:hover {
           transform: scale(1.2);
         }

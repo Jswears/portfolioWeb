@@ -1,22 +1,22 @@
 import MyImage from "../assets/Frame 3 (4).png";
-import Linkedin from "../assets/mdi_linkedin.png";
-import Github from "../assets/mdi_github.png";
-import Gmail from "../assets/mdi_gmail.png";
+import Linkedin from "../assets/icons8-linkedin.svg";
+import Github from "../assets/github-mark.svg";
+import Resume from "../assets/resume-svgrepo-com.svg";
+
 import { useEffect, useState } from "react";
 
 const socialLinks = [
   {
-    name: Linkedin,
+    name: "Linkedin",
     image: Linkedin,
     url: "https://www.linkedin.com/in/joaquin-ignacio-swears-salinas-9a4947284/",
   },
-  { name: Github, image: Github, url: "https://github.com/Jswears" },
-  // {
-  //   name: Gmail,
-  //   image: Gmail,
-  //   url: "mailto:ji.swearssalinas@gmail.com",
-  //   title: "ji.swearssalinas@gmail.com",
-  // },
+  { name: "Github", image: Github, url: "https://github.com/Jswears" },
+  {
+    name: "Resume",
+    image: Resume,
+    url: "https://drive.google.com/file/d/1JY-yo4PNddkKhqdOQ5XAuZSmjORCFAlu/view?usp=sharing",
+  },
 ];
 
 const IntroSection = ({ language }) => {
@@ -93,14 +93,14 @@ const IntroSection = ({ language }) => {
           <div className="social">
             {socialLinks.map((link) => (
               <a key={link.name} href={link.url}>
-                <img src={link.image} alt={link.name} title={link.title} />
+                <img
+                  src={link.image}
+                  alt={link.name}
+                  title={link.name}
+                  style={{ height: "64px" }}
+                />
               </a>
             ))}
-            <button className="resume-btn">
-              <a href="https://drive.google.com/file/d/1JY-yo4PNddkKhqdOQ5XAuZSmjORCFAlu/view?usp=sharing">
-                {language === "en" ? "Resume" : "Lebenslauf"}
-              </a>
-            </button>
           </div>
         </div>
       </div>
