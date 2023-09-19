@@ -131,11 +131,11 @@ const projectsContent = [
     tags: [
       {
         name: "scss",
-        color: "blue-text-gradient",
+        color: "pink-text-gradient",
       },
       {
         name: "react",
-        color: "green-text-gradient",
+        color: "blue-text-gradient",
       },
       {
         name: "typescript",
@@ -163,7 +163,7 @@ const projectsContent = [
       },
       {
         name: "react",
-        color: "green-text-gradient",
+        color: "blue-text-gradient",
       },
       {
         name: "node.js",
@@ -171,7 +171,7 @@ const projectsContent = [
       },
       {
         name: "express",
-        color: "green-text-gradient",
+        color: "yellow-text-gradient",
       },
       {
         name: "mongodb",
@@ -195,7 +195,7 @@ const projectsContent = [
       },
       {
         name: "ejs",
-        color: "green-text-gradient",
+        color: "yellow-text-gradient",
       },
       {
         name: "node.js",
@@ -203,7 +203,7 @@ const projectsContent = [
       },
       {
         name: "express",
-        color: "green-text-gradient",
+        color: "yellow-text-gradient",
       },
       {
         name: "mongodb",
@@ -229,11 +229,11 @@ const projectsContent = [
         },
         {
           name: "html",
-          color: "green-text-gradient",
+          color: "orange-text-gradient",
         },
         {
           name: "javascript",
-          color: "green-text-gradient",
+          color: "yellow-text-gradient",
         },
       ],
     image: UnknownChronicles,

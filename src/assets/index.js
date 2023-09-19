@@ -22,6 +22,7 @@ import TailwindLogo from "./technologies/tailwind.svg";
 import SassLogo from "./technologies/sass.png";
 import NextLogo from "./technologies/next.svg";
 import herobg from "./herobg.jpg";
+import githubwhite from "./technologies/githubwhite.svg";
 
 export {
   CssLogo,
@@ -48,4 +49,5 @@ export {
   SassLogo,
   NextLogo,
   herobg,
+  githubwhite,
 };

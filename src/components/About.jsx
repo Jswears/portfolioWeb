@@ -47,13 +47,13 @@ const About = ({ language }) => {
         {socialLinks.map((element) => (
           <div
             key={element.name}
-            className="item w-16 h-16 p-2 bg-[#2d90b6] rounded-lg shadow-md hover:scale-125 cursor-grab"
+            className="item w-16 h-16 p-3 bg-white rounded-full hover:scale-125 cursor-grab"
             onClick={() => window.open(element.url[language], "_blank")}
           >
-            <img src={element.image} alt={element.name}/>
+            <img src={element.image} alt={element.name} />
+            <p className="mt-5 ">{element.name}</p>
           </div>
         ))}
-        <span>&lt;—Download Resume/&gt;</span>
       </div>
     </motion.section>
   );
