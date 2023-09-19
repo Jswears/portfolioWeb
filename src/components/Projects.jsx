@@ -18,7 +18,6 @@ const Projects = ({ language }) => {
       className="sm:px-16 px-6 sm:py-16 py-10 max-w-7xl mx-auto relative z-0"
     >
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} `}>My work</p>
         <h2 className={`${styles.sectionHeadText}`}>
           {projectOverview[language].heading}
         </h2>

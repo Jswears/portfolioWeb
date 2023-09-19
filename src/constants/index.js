@@ -46,7 +46,10 @@ const navLinks = [
 
 const socialLinks = [
   {
-    name: "Linkedin",
+    name: {
+      en: "Linkedin",
+      de: "Linkedin",
+    },
     image: Linkedin,
     url: {
       en: "https://www.linkedin.com/in/joaquin-ignacio-swears-salinas-9a4947284/",
@@ -54,7 +57,10 @@ const socialLinks = [
     },
   },
   {
-    name: "Github",
+    name: {
+      en: "Github",
+      de: "Github",
+    },
     image: Github,
     url: {
       en: "htttps://github.com/Jswears",
@@ -62,11 +68,14 @@ const socialLinks = [
     },
   },
   {
-    name: "Resume",
+    name: {
+      en: "Resume",
+      de: "Lebenslauf",
+    },
     image: Resume,
     url: {
-      de: "https://drive.google.com/file/d/1OMBBWiWZHAFWTQnCVTAoLbblbWN56AiL/view?usp=sharing",
-      en: "https://drive.google.com/file/d/17TypN8sxRLRhEuIx_yXEF2TLXhpYjkk2/view?usp=sharing",
+      de: "https://drive.google.com/file/d/183ogaK4UZk5Y67nom5xvipwWXkdfgmo8/view?usp=sharing",
+      en: "https://drive.google.com/file/d/1maxaz0sdv9L3SKKi4DSXZN0I6ZVbTWBa/view?usp=sharing",
     },
   },
 ];
@@ -153,7 +162,7 @@ const projectsContent = [
   {
     name: "VetApp",
     description: {
-      en: "App to help connecting pet owners with veterinarians.",
+      en: "App to help connecting pet owners with veterinarians. WebApp Developed by a team of 3 people (including me)",
       de: "App, die Tierhalter mit Tierärzten zusammenbringt",
     },
     tags: [
@@ -185,7 +194,7 @@ const projectsContent = [
   {
     name: "Trackify",
     description: {
-      en: "App to help you track your habits, dailies and to-do's ",
+      en: "App to help you track your habits, dailies and to-do's. WebApp developer by a team of 2 people (including me) ",
       de: "App zum Verfolgen deiner Habits",
     },
     tags: [

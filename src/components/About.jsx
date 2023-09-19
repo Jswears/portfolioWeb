@@ -16,8 +16,9 @@ const About = ({ language }) => {
       id="about-section"
     >
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <h2 className={styles.sectionHeadText}>
+          {aboutContent[language].heading}
+        </h2>
       </motion.div>
 
       <motion.p
@@ -43,15 +44,15 @@ const About = ({ language }) => {
           ))}
         </div>
       </div>
-      <div className="flex space-x-4 items-center flex-wrap">
+      <div className="flex space-x-4 items-center flex-wrap mt-8">
         {socialLinks.map((element) => (
           <div
-            key={element.name}
+            key={element.name[language]}
             className="item w-16 h-16 p-3 bg-white rounded-full hover:scale-125 cursor-grab"
             onClick={() => window.open(element.url[language], "_blank")}
           >
             <img src={element.image} alt={element.name} />
-            <p className="mt-5 ">{element.name}</p>
+            <p className="mt-5 ">{element.name[language]}</p>
           </div>
         ))}
       </div>
