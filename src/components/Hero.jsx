@@ -9,7 +9,7 @@ const Hero = ({ language }) => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
-        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5 mt-12`}
+        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
         <div className="flex flex-col justify-center items-center mt-5">
           <div className="w-5 h-5 rounded-full bg-[#642035;]" />
@@ -21,19 +21,19 @@ const Hero = ({ language }) => {
             {introContent[language].header}
             <span className="text-red-400">Joaquin</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100 w-2/4`}>
+          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             {introContent[language].bio}
           </p>
           <div className="flex justify-end items-center mt-12">
             <img
               src={MyImage}
               alt="My Image"
-              className=" md:h-96 md:w-96 object-contain object-center pointer-events-none shadow-card rounded-full "
+              className=" md:h-96 md:w-96  object-contain object-center pointer-events-none shadow-card rounded-full "
             />
           </div>
         </div>
       </div>
-      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+      <div className="absolute xs:bottom-10 bottom-10 w-full flex justify-center items-center">
         <a href="#about-section">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div
