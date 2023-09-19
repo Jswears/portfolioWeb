@@ -47,14 +47,17 @@ const Navbar = ({ language, toggleLanguage }) => {
             <span className="sm:block hidden">Joaquin Swears. </span>
           </p>
         </Link>
-        <button onClick={() => toggleLanguage(language === "en" ? "de" : "en")}>
+        <button
+          onClick={() => toggleLanguage(language === "en" ? "de" : "en")}
+          className="text-white  text-xs cursor-pointer border h-9 w-9 hover:bg-white hover:text-primary transition-all duration-300 ease-in-out"
+        >
           {language === "en" ? "DE" : "EN"}
         </button>
 
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((nav) => (
             <li
-              key={nav.name}
+              key={nav.name[language]}
               className={`${
                 active === nav.name ? "text-white" : "text-secondary"
               } hover:text-white text-[18px] font-medium cursor-pointer`}

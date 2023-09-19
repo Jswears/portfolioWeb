@@ -37,7 +37,7 @@ const ProjectCard = ({
                 src={Github}
                 fill="white"
                 alt="source code"
-                className="w-1/2 h-1/2 object-contai"
+                className="w-1/2 h-1/2 object-contain"
               />
             </div>
           </div>

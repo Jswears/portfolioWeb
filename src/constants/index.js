@@ -88,12 +88,12 @@ const technologiesLogos = [
 
 const introContent = {
   en: {
-    name: "Hey! I'm Joaquin.",
+    header: "Hey! I'm ",
     role: "Web Developer",
     bio: "Web Developer from Chile based in Hamburg.  I like to write some code and solve problems.",
   },
   de: {
-    name: "Moin! Ich bin Joaquin.",
+    header: "Moin! Ich bin ",
     role: "Webentwickler",
     bio: "Entwickler aus Chile mit Sitz in Hamburg. Ich mag es, etwas Code zu schreiben und Probleme zu lösen.",
   },

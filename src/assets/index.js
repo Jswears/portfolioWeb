@@ -21,6 +21,7 @@ import TypescriptLogo from "./technologies/typescript.png";
 import TailwindLogo from "./technologies/tailwind.svg";
 import SassLogo from "./technologies/sass.png";
 import NextLogo from "./technologies/next.svg";
+import herobg from "./herobg.png";
 
 export {
   CssLogo,
@@ -46,4 +47,5 @@ export {
   TailwindLogo,
   SassLogo,
   NextLogo,
+  herobg,
 };
