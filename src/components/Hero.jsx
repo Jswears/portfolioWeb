@@ -24,7 +24,7 @@ const Hero = ({ language }) => {
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             {introContent[language].bio}
           </p>
-          <div className="flex justify-end items-center mt-12">
+          <div className="flex justify-end items-center">
             <img
               src={MyImage}
               alt="My Image"
@@ -33,7 +33,7 @@ const Hero = ({ language }) => {
           </div>
         </div>
       </div>
-      <div className="absolute xs:bottom-10 bottom-10 w-full flex justify-center items-center">
+      <div className="absolute xs:bottom-10 bottom-12 w-full flex justify-center items-center">
         <a href="#about-section">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div
