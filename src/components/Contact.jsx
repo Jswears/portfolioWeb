@@ -6,6 +6,10 @@ import { styles } from "../styles";
 import { slideIn, staggerContainer } from "../utils/motion";
 import { contactContent } from "../constants";
 
+const serviceId = import.meta.env.VITE_SERVICE_ID;
+const templateId = import.meta.env.VITE_TEMPLATE_ID;
+const publicKey = import.meta.env.VITE_PUBLIC_KEY;
+
 const Contact = ({ language }) => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -26,8 +30,8 @@ const Contact = ({ language }) => {
 
     emailjs
       .send(
-        "service_ujk937j",
-        "template_shya72w",
+        serviceId,
+        templateId,
         {
           from_name: form.name,
           to_name: "Joaquin",
@@ -35,7 +39,7 @@ const Contact = ({ language }) => {
           to_email: "ji.swearssalinas@gmail.com",
           message: form.message,
         },
-        "xwmrDWKYydXq9yvnw"
+        publicKey
       )
       .then(
         () => {
