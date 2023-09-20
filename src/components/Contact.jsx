@@ -27,7 +27,6 @@ const Contact = ({ language }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
-
     emailjs
       .send(
         serviceId,
@@ -125,7 +124,18 @@ const Contact = ({ language }) => {
 
             <button
               type="submit"
-              className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
+              disabled={
+                form.name.length === 0 ||
+                form.email.length === 0 ||
+                form.message.length === 0
+              }
+              className={`bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary ${
+                form.name.length === 0 ||
+                form.email.length === 0 ||
+                form.message.length === 0
+                  ? "opacity-50 cursor-not-allowed disabled"
+                  : ""
+              }`}
             >
               {loading
                 ? "Sending..."
