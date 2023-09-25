@@ -33,7 +33,7 @@ const About = ({ language }) => {
           {technologiesLogos.map((technology) => (
             <div
               key={technology.name}
-              className="item w-16 h-16 p-2 bg-white rounded-lg shadow-md hover:scale-125 cursor-grab"
+              className="item w-16 h-16 p-2 bg-white rounded-lg shadow-md hover:scale-125"
             >
               <img
                 src={technology.src}
@@ -48,7 +48,7 @@ const About = ({ language }) => {
         {socialLinks.map((element) => (
           <div
             key={element.name[language]}
-            className="item w-16 h-16 p-3 bg-white rounded-full hover:scale-125 cursor-grab"
+            className="item w-16 h-16 p-3 bg-white rounded-full hover:scale-125"
             onClick={() => window.open(element.url[language], "_blank")}
           >
             <img src={element.image} alt={element.name} />
