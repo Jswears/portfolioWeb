@@ -132,34 +132,6 @@ const projectOverview = {
 
 const projectsContent = [
   {
-    name: "Spotify-clone",
-    description: {
-      en: "App in progress",
-      de: "App in progress",
-    },
-    tags: [
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "typescript",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "docker",
-        color: "blue-text-gradient",
-      },
-    ],
-    image: SpotifyClone,
-    deployLink: "https://espotifai-clone.netlify.app/search",
-    repository: "https://github.com/Jswears/spotify-clone",
-  },
-  {
     name: "VetApp",
     description: {
       en: "App to help connecting pet owners with veterinarians. WebApp Developed by a team of 3 people (including me)",
@@ -248,6 +220,34 @@ const projectsContent = [
     image: UnknownChronicles,
     deployLink: "https://jswears.github.io/unknownChronicles/",
     repository: "https://github.com/Jswears/unknownChronicles",
+  },
+  {
+    name: "Spotify-clone",
+    description: {
+      en: "App in progress, clone of the spotify web app (only search page), not responsive yet, because of testing purposes.",
+      de: "App in Arbeit, Klon der Spotify Web-App (nur Suchseite), noch nicht responsive, wegen Testzwecken.",
+    },
+    tags: [
+      {
+        name: "scss",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "docker",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: SpotifyClone,
+    deployLink: "https://espotifai-clone.netlify.app/search",
+    repository: "https://github.com/Jswears/spotify-clone",
   },
 ];
 
