@@ -46,13 +46,17 @@ const About = ({ language }) => {
       </div>
       <div className="flex space-x-4 items-center flex-wrap mt-8">
         {socialLinks.map((element) => (
-          <div
-            key={element.name[language]}
-            className="item w-16 h-16 p-3 bg-white rounded-full hover:scale-125"
-            onClick={() => window.open(element.url[language], "_blank")}
-          >
-            <img src={element.image} alt={element.name} />
-            <p className="mt-5 ">{element.name[language]}</p>
+          <div>
+            <div
+              key={element.name[language]}
+              className="item w-16 h-16 p-3 bg-white rounded-full cursor-pointer"
+              onClick={() => window.open(element.url[language], "_blank")}
+            >
+              <img src={element.image} alt={element.name} />
+            </div>
+            <a href={element.url[language]} className="hover:text-slate-600">
+              {element.name[language]}
+            </a>
           </div>
         ))}
       </div>
