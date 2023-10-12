@@ -23,6 +23,7 @@ import SassLogo from "./technologies/sass.webp";
 import NextLogo from "./technologies/next.svg";
 import herobg from "./herobg.svg";
 import githubwhite from "./technologies/githubwhite.svg";
+import TasteDontWaste from "./taste-dont-waste.webp";
 
 export {
   CssLogo,
@@ -50,4 +51,5 @@ export {
   NextLogo,
   herobg,
   githubwhite,
+  TasteDontWaste,
 };

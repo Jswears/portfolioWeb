@@ -18,6 +18,7 @@ import {
   TailwindLogo,
   SassLogo,
   NextLogo,
+  TasteDontWaste,
 } from "../assets";
 
 const navLinks = [
@@ -131,6 +132,38 @@ const projectOverview = {
 };
 
 const projectsContent = [
+  {
+    name: "Taste Don't Waste",
+    description: {
+      en: "Freelance Job, development of a website for a groceries management app.",
+      de: "Freelance Job, Entwicklung einer Website für eine App zur Lebensmittlekontrolle.",
+    },
+    tags: [
+      {
+        name: "tailwind",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "next.js",
+        color: "text-white",
+      },
+      {
+        name: "AWS Lambda",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "AWS API Gateway",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Serverless Framework",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: TasteDontWaste,
+    deployLink: "https://www.taste-dont-waste.com/",
+    repository: "https://github.com/Jswears",
+  },
   {
     name: "VetApp",
     description: {
