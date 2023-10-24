@@ -306,6 +306,41 @@ const contactContent = {
     formSubmit: "Senden",
   },
 };
+
+const testimonialsContent = {
+  en: {
+    heading: "Testimonials",
+    paragraph: "What others say",
+  },
+  de: {
+    heading: "Testimonials",
+    paragraph: "Was andere sagen",
+  },
+};
+
+const testimonials = [
+  {
+    en: {
+      testimonial:
+        "Joaquin excelled in developing our website, demonstrating superb communication, responsiveness, and a proactive approach. His ability to overcome challenges and provide valuable design recommendations was outstanding. I'd gladly collaborate with Joaquin again, and I commend his fantastic website work!",
+      name: "Jake Blaisdell",
+      designation: "Co-Founder",
+      company: "Taste Don't Waste",
+      image:
+        "https://media.licdn.com/dms/image/D4E03AQGv3ZjV30BOlA/profile-displayphoto-shrink_100_100/0/1696846546120?e=1703721600&v=beta&t=b3BNjBLwJJr0mtSfg-kKSOFI498moUE96mBN-KeKJIY",
+    },
+    de: {
+      testimonial:
+        "Joaquin hat sich bei der Entwicklung unserer Website hervorgetan und dabei hervorragende Kommunikation, Reaktionsfähigkeit und eine proaktive Herangehensweise gezeigt. Seine Fähigkeit, Herausforderungen zu meistern und wertvolle Designempfehlungen zu geben, war hervorragend. Ich würde gerne wieder mit Joaquin zusammenarbeiten und ich empfehle seine fantastische Website-Entwicklung Arbeit!",
+      name: "Jake Blaisdell",
+      designation: "Mitbegründer",
+      company: "Taste Don't Waste",
+      image:
+        "https://media.licdn.com/dms/image/D4E03AQGv3ZjV30BOlA/profile-displayphoto-shrink_100_100/0/1696846546120?e=1703721600&v=beta&t=b3BNjBLwJJr0mtSfg-kKSOFI498moUE96mBN-KeKJIY",
+    },
+  },
+];
+
 export {
   technologiesLogos,
   aboutContent,
@@ -315,4 +350,6 @@ export {
   navLinks,
   projectOverview,
   contactContent,
+  testimonials,
+  testimonialsContent,
 };
