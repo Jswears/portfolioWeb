@@ -75,8 +75,8 @@ const socialLinks = [
     },
     image: Resume,
     url: {
-      de: "https://drive.google.com/file/d/183ogaK4UZk5Y67nom5xvipwWXkdfgmo8/view?usp=sharing",
-      en: "https://drive.google.com/file/d/1maxaz0sdv9L3SKKi4DSXZN0I6ZVbTWBa/view?usp=sharing",
+      de: "https://drive.google.com/file/d/1YO9hH-zMLUWJ3i5RsrZj7wIs6nB3F7qP/view?usp=sharing",
+      en: "https://drive.google.com/file/d/1vl-s0AYCUJHajE0-2H7riC_jjlAuLHSt/view?usp=sharing",
     },
   },
 ];
